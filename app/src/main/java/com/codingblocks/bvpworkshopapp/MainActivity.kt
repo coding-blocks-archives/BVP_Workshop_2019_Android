@@ -1,5 +1,6 @@
 package com.codingblocks.bvpworkshopapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -25,9 +26,12 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
 
+        btnOpen.setOnClickListener {
+            val intent = Intent(this, DIscolightsActivity::class.java)
 
-
+            startActivity(intent)
         }
     }
 
